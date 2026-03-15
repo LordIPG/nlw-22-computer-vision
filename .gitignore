@@ -1,0 +1,21 @@
+# ambiente virtual
+.venv/
+
+# cache do python
+__pycache__/
+*.pyc
+
+# arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# notebooks temporários
+.ipynb_checkpoints/
+
+# variáveis de ambiente
+.env
+
+# dados e modelos treinados
+data/
+*.pth
+*.pt
