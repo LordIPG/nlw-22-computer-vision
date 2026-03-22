@@ -1,5 +1,9 @@
 # 🖐️ Sistema de Reconhecimento de Gestos e Visão Computacional
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-00C7B7?style=for-the-badge&logo=google&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
 ## 📌 Sobre o Projeto
 
 Este projeto foi desenvolvido como parte do meu aprendizado em Visão Computacional, explorando na prática diferentes áreas como classificação, detecção, segmentação e reconhecimento de gestos.
