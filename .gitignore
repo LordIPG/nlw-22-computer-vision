@@ -1,0 +1,53 @@
+# Environment & Secrets
+.env
+.venv/
+venv/
+env/
+test_key.py
+.python-version
+
+# Models & Data
+*.task
+*.pkl
+*.tflite
+*.csv
+*.pth
+*.pt
+data/
+models/
+weights/
+
+# ML Experimentation & Logs
+runs/
+wandb/
+lightning_logs/
+*.log
+
+# Python Cache, Build & Tools
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+.ipython/
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project Specific outputs
+analysis_report.md
+results/
+output/
+export/
+list_models.py
