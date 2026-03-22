@@ -1,5 +1,9 @@
 # 🧠 LeNet-5 — Classificação de Dígitos MNIST
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
 > Projeto desenvolvido durante meus estudos em Visão Computacional (NLW - Rocketseat)
 
 ---
