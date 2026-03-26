@@ -1,4 +1,4 @@
-# 🚀 Computer Vision & AI
+# 🚀 Visão Computacional & AI
 
 > Projetos desenvolvidos durante minha jornada em Inteligência Artificial, Deep Learning e Visão Computacional.
 
@@ -26,37 +26,37 @@ Aqui você encontrará desde a implementação de uma **rede neural clássica (L
 
 ## 📂 Projetos
 
-### 🔢 LeNet-5 — Classificação de Dígitos
+### LeNet-5 — Classificação de Dígitos
 
 Implementação da arquitetura clássica LeNet-5 com PyTorch.
 
-- 📊 Acurácia: **98.91%**
-- 🧠 CNN aplicada ao MNIST
-- 🔬 Visualização de feature maps
+- Acurácia: **98.91%**
+- CNN aplicada ao MNIST
+- Visualização de feature maps
 
 📁 `lenet/`
 
 ---
 
-### ✋ Sistema de Reconhecimento de Gestos
+### Sistema de Reconhecimento de Gestos
 
 Pipeline completo de Machine Learning para classificação de gestos.
 
-- 📸 Coleta de dados com MediaPipe
-- 🤖 Treinamento de modelo customizado
-- 🎥 Inferência em tempo real
+- Coleta de dados com MediaPipe
+- Treinamento de modelo customizado
+- Inferência em tempo real
 
 📁 `recog_system/`
 
 ---
 
-### 🤖 GestureFlow — Reconhecimento de Gestos com IA em Tempo Real
+### GestureFlow — Reconhecimento de Gestos com IA em Tempo Real
 
 Aplicação web com reconhecimento de gestos em tempo real.
 
-- ⚡ WebSockets (baixa latência)
-- 🧠 MediaPipe + ML
-- 🌐 Interface interativa
+- WebSockets (baixa latência)
+- MediaPipe + ML
+- Interface interativa
 
 📁 `computer_vision_app/`
 
@@ -81,4 +81,4 @@ Meu foco com esses projetos foi sair da teoria e construir aplicações reais, e
 
 ## 👨‍💻 Autor
 
-Desenvolvido por mim durante meus estudos em Inteligência Artificial.
+Desenvolvido por mim durante o evento NLW Operator!
