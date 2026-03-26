@@ -5,6 +5,8 @@ venv/
 env/
 test_key.py
 .python-version
+.sesskey
+.DS_Store
 
 # Models & Data
 *.task
@@ -13,6 +15,7 @@ test_key.py
 *.csv
 *.pth
 *.pt
+*.joblib
 data/
 models/
 weights/
@@ -29,6 +32,7 @@ __pycache__/
 *$py.class
 build/
 dist/
+wheels/
 *.egg-info/
 .pytest_cache/
 .ruff_cache/
@@ -41,7 +45,6 @@ dist/
 # IDEs & System
 .vscode/
 .idea/
-.DS_Store
 Thumbs.db
 desktop.ini
 

@@ -2,12 +2,6 @@ version = 1
 revision = 3
 requires-python = ">=3.14"
 
-[manifest]
-members = [
-    "ivanu",
-    "lenet",
-]
-
 [[package]]
 name = "appnope"
 version = "0.1.4"
@@ -271,11 +265,6 @@ wheels = [
 ]
 
 [[package]]
-name = "ivanu"
-version = "0.1.0"
-source = { virtual = "." }
-
-[[package]]
 name = "jedi"
 version = "0.19.2"
 source = { registry = "https://pypi.org/simple" }
@@ -369,7 +358,7 @@ wheels = [
 [[package]]
 name = "lenet"
 version = "0.1.0"
-source = { virtual = "lenet" }
+source = { virtual = "." }
 dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },

@@ -1,166 +1,84 @@
-# 🖐️ Sistema de Reconhecimento de Gestos e Visão Computacional
+# 🚀 Computer Vision & AI
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-00C7B7?style=for-the-badge&logo=google&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-## 📌 Sobre o Projeto
-
-Este projeto foi desenvolvido como parte do meu aprendizado em Visão Computacional, explorando na prática diferentes áreas como classificação, detecção, segmentação e reconhecimento de gestos.
-
-Durante o desenvolvimento, trabalhei com modelos pré-treinados e também com a criação de um modelo próprio de Machine Learning, construindo um pipeline completo que vai desde a coleta de dados até a inferência em tempo real.
-
-O principal objetivo foi entender como aplicar visão computacional em cenários reais utilizando Python.
+> Projetos desenvolvidos durante minha jornada em Inteligência Artificial, Deep Learning e Visão Computacional.
 
 ---
 
-## 🎯 Objetivo
+## 🧠 Sobre este Repositório
 
-Construir um sistema capaz de:
+Este repositório reúne projetos práticos que desenvolvi com o objetivo de entender e aplicar conceitos de **Machine Learning, Deep Learning e Visão Computacional** em cenários reais.
 
-- Reconhecer gestos em tempo real utilizando webcam  
-- Treinar um modelo customizado com dados coletados manualmente  
-- Explorar diferentes técnicas modernas de visão computacional  
+Aqui você encontrará desde a implementação de uma **rede neural clássica (LeNet-5)** até uma aplicação completa de **reconhecimento de gestos em tempo real com interface web**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tech Stack
 
-- Python  
-- OpenCV (captura de vídeo)  
-- MediaPipe (detecção de mãos e landmarks)  
-- Scikit-Learn (treinamento do modelo)  
-- Pandas / NumPy (manipulação de dados)  
-- Modelos pré-treinados (MobileNet, YOLO, CLIPSeg)  
-- Google Gemini API (análise de imagens)  
-- uv (gerenciamento de dependências)  
-
----
-
-## 🔄 Pipeline de Reconhecimento de Gestos
-
-O sistema principal foi dividido em três etapas:
-
-### 📸 Coleta de Dados
-
-Captura das coordenadas (x, y, z) dos 21 pontos da mão utilizando MediaPipe.
-
-- Criação de dataset próprio  
-- Registro manual de gestos  
-- Salvamento em arquivo `.csv`  
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Google-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-yellow?logo=scikitlearn)
+![WebSockets](https://img.shields.io/badge/WebSockets-RealTime-black)
+![FastHTML](https://img.shields.io/badge/FastHTML-Web-purple)
 
 ---
 
-### 🧠 Treinamento do Modelo
+## 📂 Projetos
 
-Treinamento de um modelo de Machine Learning utilizando Scikit-Learn:
+### 🔢 LeNet-5 — Classificação de Dígitos
 
-- Algoritmo: Random Forest  
-- Processamento dos dados coletados  
-- Geração dos arquivos:
-  - `gesture_model.pkl`  
-  - `label_encoder.pkl`  
+Implementação da arquitetura clássica LeNet-5 com PyTorch.
 
----
+- 📊 Acurácia: **98.91%**
+- 🧠 CNN aplicada ao MNIST
+- 🔬 Visualização de feature maps
 
-### 🎥 Reconhecimento em Tempo Real
-
-Uso da webcam para:
-
-- Detectar mãos  
-- Extrair landmarks  
-- Classificar gestos em tempo real  
+📁 `lenet/`
 
 ---
 
-## 🔬 Explorações em Visão Computacional
+### ✋ Sistema de Reconhecimento de Gestos
 
-Além do sistema de gestos, também explorei outras áreas importantes:
+Pipeline completo de Machine Learning para classificação de gestos.
 
-- Classificação de imagens com MobileNet  
-- Detecção de objetos com YOLO  
-- Segmentação de imagens com CLIPSeg  
-- Análise de imagens com a API do Google Gemini  
+- 📸 Coleta de dados com MediaPipe
+- 🤖 Treinamento de modelo customizado
+- 🎥 Inferência em tempo real
 
----
-
-## 📁 Estrutura do Projeto
-
-recog_system/  
-├── record_hand_landmarks.py  
-├── train_gesture_model.py  
-├── webcam_recog.py  
-├── mobilenet_classification.ipynb  
-├── yolos_detection.ipynb  
-├── segmentation_clipseg.ipynb  
-├── gemini_vision.ipynb  
-├── pyproject.toml  
-└── README.md  
+📁 `recog_system/`
 
 ---
 
-## ⚙️ Como Executar
+### 🤖 GestureFlow — Reconhecimento de Gestos com IA em Tempo Real
 
-### 🧩 Pré-requisitos
+Aplicação web com reconhecimento de gestos em tempo real.
 
-Este projeto utiliza o gerenciador de pacotes uv:
+- ⚡ WebSockets (baixa latência)
+- 🧠 MediaPipe + ML
+- 🌐 Interface interativa
 
-https://astral.sh/uv  
-
----
-
-### 📦 Instalação
-
-cd recog_system  
-uv sync  
-
----
-
-### ▶️ Execução
-
-Coletar dados:
-
-python record_hand_landmarks.py  
-
-Treinar o modelo:
-
-python train_gesture_model.py  
-
-Executar reconhecimento em tempo real:
-
-python webcam_recog.py  
-
----
-
-## 🚀 Funcionalidades do Projeto
-
-- Criação de dataset personalizado de gestos  
-- Treinamento de modelo próprio  
-- Reconhecimento em tempo real via webcam  
-- Testes com modelos modernos de visão computacional  
-- Integração com API de IA (Gemini)  
+📁 `computer_vision_app/`
 
 ---
 
 ## 📚 Aprendizados
 
-Durante esse projeto eu aprendi:
-
-- Como funciona a detecção de mãos com MediaPipe  
-- Como estruturar um pipeline de Machine Learning  
-- Como coletar e preparar dados reais  
-- Como treinar e avaliar modelos  
-- Como aplicar visão computacional em tempo real  
-- Como utilizar modelos pré-treinados  
+- Deep Learning (CNN)
+- Visão Computacional na prática
+- Processamento de imagens
+- Comunicação em tempo real
+- Integração backend + frontend
+- Construção de sistemas completos com IA
 
 ---
 
-## 🧾 Considerações Finais
+## 🎯 Objetivo
 
-Este projeto foi essencial para consolidar meu entendimento em visão computacional, permitindo aplicar conceitos teóricos em aplicações reais.
+Meu foco com esses projetos foi sair da teoria e construir aplicações reais, entendendo como cada parte funciona.
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por mim durante meus estudos em Inteligência Artificial e Visão Computacional.
+Desenvolvido por mim durante meus estudos em Inteligência Artificial.

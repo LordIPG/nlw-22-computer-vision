@@ -1,5 +1,5 @@
 def main():
-    print("Hello from lenet!")
+    print("Hello from computer-vision-app!")
 
 
 if __name__ == "__main__":
