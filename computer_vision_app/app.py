@@ -1,4 +1,5 @@
 import json
+import os
 import time
 from fasthtml.common import *
 from core.processor import GestureProcessor
@@ -127,4 +128,5 @@ async def ws(image: str, draw_landmarks: bool, send):
             "fps": fps
         }))
 
-serve(host='0.0.0.0', port=5001)
+port = int(os.environ.get("PORT", 5001))
+serve(host='0.0.0.0', port=port)
