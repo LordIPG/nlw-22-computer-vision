@@ -128,5 +128,13 @@ async def ws(image: str, draw_landmarks: bool, send):
             "fps": fps
         }))
 
-port = int(os.environ.get("PORT", 5001))
-serve(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    print(f"Starting server on port {port}...")
+    try:
+        serve(app, host='0.0.0.0', port=port)
+    except Exception as e:
+        print(f"CRITICAL ERROR during server startup: {e}")
+        import traceback
+        traceback.print_exc()
+        exit(1)
