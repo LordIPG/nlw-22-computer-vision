@@ -33,6 +33,6 @@ RUN /uv/bin/uv sync --frozen --no-dev
 # Expose the port
 EXPOSE 10000
 
-# Start the application
-# We use /app/.venv/bin/python to skip 'uv run' overhead in production
-CMD ["/app/.venv/bin/python", "app.py"]
+# Start the application using uvicorn (ASGI standard)
+# We listen on 0.0.0.0 and use the PORT env var provided by Render
+CMD ["/app/.venv/bin/python", "-m", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
