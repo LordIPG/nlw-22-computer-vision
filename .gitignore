@@ -8,7 +8,7 @@ test_key.py
 .sesskey
 .DS_Store
 
-# Models & Data
+# Models & Data (ignored by default, but unignore the productive ones)
 *.task
 *.pkl
 *.tflite
@@ -19,6 +19,11 @@ test_key.py
 data/
 models/
 weights/
+
+# UNIGNORE productive models
+!computer_vision_app/models/
+!computer_vision_app/models/*.task
+!computer_vision_app/models/*.joblib
 
 # ML Experimentation & Logs
 runs/
