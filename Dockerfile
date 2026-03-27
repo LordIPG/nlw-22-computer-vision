@@ -1,5 +1,5 @@
-# Use a lightweight Python image
-FROM python:3.12-slim
+# Use an older, more stable Python image for better MediaPipe support
+FROM python:3.11-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \

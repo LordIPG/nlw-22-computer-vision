@@ -1,0 +1,16 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.dbus
+.DS_Store
+*.log
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.ipynb_checkpoints
+lenet/
+recog_system/
+node_modules/
