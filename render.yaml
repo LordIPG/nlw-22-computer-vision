@@ -1,15 +1,11 @@
 services:
   - type: web
     name: nlw-22-computer-vision
-    runtime: python
-    buildCommand: "pip install uv && uv sync"
-    startCommand: "uv run python app.py"
+    runtime: docker
+    dockerContext: .
+    dockerfilePath: Dockerfile
     envVars:
       - key: PORT
         value: 10000
-      - key: PYTHON_VERSION
-        value: 3.12.7
-      - key: ROOT_DIR
-        value: computer_vision_app
     region: oregon
     plan: free
